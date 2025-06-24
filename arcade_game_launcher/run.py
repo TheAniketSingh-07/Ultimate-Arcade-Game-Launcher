@@ -12,13 +12,14 @@ def main():
     print("1. 🚀 Launch Game Launcher")
     print("2. 🦕 Run Dino Run Directly")
     print("3. 🐍 Run Snake Game Directly")
-    print("4. 🧪 Run Tests")
-    print("5. ❌ Exit")
+    print("4. 🥷 Run Gravity Flip Ninja Directly")
+    print("5. 🧪 Run Tests")
+    print("6. ❌ Exit")
     print("=" * 30)
     
     while True:
         try:
-            choice = input("Select option (1-5): ").strip()
+            choice = input("Select option (1-6): ").strip()
             
             if choice == '1':
                 print("🚀 Starting Game Launcher...")
@@ -33,14 +34,18 @@ def main():
                 os.system("python3 games/snake_game/snake_game.py")
                 break
             elif choice == '4':
+                print("🥷 Starting Gravity Flip Ninja...")
+                os.system("python3 games/gravity_flip_ninja/gravity_flip_ninja.py")
+                break
+            elif choice == '5':
                 print("🧪 Running Tests...")
                 os.system("python3 test_game.py")
                 break
-            elif choice == '5':
+            elif choice == '6':
                 print("👋 Goodbye!")
                 break
             else:
-                print("❌ Invalid choice. Please select 1-5.")
+                print("❌ Invalid choice. Please select 1-6.")
         except KeyboardInterrupt:
             print("\n👋 Goodbye!")
             break
