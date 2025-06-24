@@ -1,0 +1,44 @@
+{
+  "display": {
+    "width": 1200,
+    "height": 800,
+    "target_fps": 120,
+    "vsync": true,
+    "fullscreen": false,
+    "hardware_acceleration": true
+  },
+  "performance": {
+    "cache_text_surfaces": true,
+    "cache_size_limit": 1000,
+    "smooth_scrolling": true,
+    "animation_quality": "high",
+    "background_updates": false
+  },
+  "graphics": {
+    "anti_aliasing": true,
+    "rounded_corners": true,
+    "glow_effects": false,
+    "particle_effects": false,
+    "shadow_quality": "medium"
+  },
+  "audio": {
+    "enabled": true,
+    "frequency": 22050,
+    "buffer_size": 512,
+    "sound_effects": true,
+    "background_music": false
+  },
+  "controls": {
+    "mouse_sensitivity": 1.0,
+    "scroll_speed": 30,
+    "double_click_time": 500,
+    "hover_delay": 100
+  },
+  "optimization": {
+    "dirty_rect_updates": true,
+    "surface_caching": true,
+    "font_caching": true,
+    "lazy_loading": true,
+    "memory_management": true
+  }
+}
